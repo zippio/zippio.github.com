@@ -234,8 +234,15 @@ small{
 ============================================================ */
 .slider{
   float:left;
+  height:230px;
   margin-right:300px;
-  max-width:590px;
+  width:590px;
+}
+
+.slider li{
+  float:left;
+  height:230px;
+  width:590px;
 }
 
 .slider .title,
@@ -261,20 +268,30 @@ a.video{
   padding-right:22px;
 }
 
+.slider .pagination a{
+  background:url(../images/buttons/slider-pagination.png) no-repeat -16px 0;
+  float:left;
+  height:12px;
+  margin-right:3px;
+  text-indent:-9999px;
+  width:13px;
+}
+
+.slider .pagination a.selected{background-position:0 0;}
+
 .iphone{
   background:url(../images/iphone.png) no-repeat;
-  height:539px;
+  height:413px;
+  padding:126px 0 0 52px;
   position:absolute;
   right:0;
   top:-77px;
-  width:323px;
+  width:271px;
 }
 
 .iphone li{
+  float:left;
   height:328px;
-  left:52px;
-  position:absolute;
-  top:126px;
   width:219px;
 }
 
