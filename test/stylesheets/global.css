@@ -1,6 +1,6 @@
 @charset "UTF-8";
 @import url("reset.css");
-@import url("flexslider.css");
+@import url("colorbox.min.css");
 
 /* -----------------------------------------------------------
 
@@ -256,7 +256,6 @@ h3.phone{
 .slider{
   float:left;
   height:230px;
-  margin-right:300px;
   width:590px;
 }
 
@@ -315,6 +314,8 @@ a.video{
   height:328px;
   width:219px;
 }
+
+.video-wrapper{display:none;}
 
 /* Columns
 ============================================================ */
