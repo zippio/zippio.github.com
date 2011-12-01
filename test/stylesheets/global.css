@@ -1,0 +1,364 @@
+@charset "UTF-8";
+@import url("reset.css");
+@import url("flexslider.css");
+
+/* -----------------------------------------------------------
+
+- Title: Zippio Marketing Site Main Stylesheet
+- Author: David Bohorquez (http://koombea.com)		
+- Design by: Nestor Ramirez (http://koombea.com)		
+
+----------------------------------------------------------- */
+
+/* Helpers
+============================================================ */
+.clearfix:before,
+.clearfix:after{content:""; display:table;}
+.clearfix:after{clear:both;}
+.clearfix{zoom:1;}
+
+.clear{clear:left;}
+
+.floatleft{float:left !important;}
+.floatright{float:right !important;}
+.floatcenter{
+  float:none !important;
+	margin-left:auto !important;
+	margin-right:auto !important;
+	overflow:hidden;
+}
+
+.alignleft{text-align:left !important;}
+.alignright{text-align:right !important;}
+.aligncenter{text-align:center !important;}
+
+.nomargin{margin-bottom:0 !important;}
+.smallmargin{margin-bottom:5px !important;}
+.pullv{margin-top:10px;}
+.pushv{margin-bottom:25px !important;}
+.pushv2{margin-bottom:35px !important;}
+
+/* General
+============================================================ */
+html,
+body{height:100%;}
+
+body{
+  background:#EEE url(../images/backgrounds/main.gif) repeat;
+  color:#666;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size:14px;
+}
+
+#wrapper{
+  min-height:100%;
+  height:auto !important;
+  height:100%;
+  margin-bottom:-220px;
+}
+
+.wrapper{
+  margin:0 auto;
+  max-width:950px;
+  width:100%;
+}
+
+a{
+	color:#79A440;
+	-moz-transition:color 0.1s linear;
+	-webkit-transition:color 0.1s linear;
+	transition:color 0.1s linear;
+}
+
+a:hover{color:#52702D;}
+
+/* Header
+============================================================ */
+#header{
+  background:#434A4A url(../images/backgrounds/header.gif) repeat;
+  border-bottom:1px solid #2F3535;
+  overflow:hidden;
+  padding:12px 0 20px;
+}
+
+#logo{
+  float:left;
+  position:relative;
+  top:4px;
+}
+
+#header nav{float:right;}
+
+#header nav .main{
+  float:right;
+  position:relative;
+  top:20px;
+}
+
+#header nav .main a{
+  background:url(../images/buttons/btn.png) no-repeat 0 0;
+  color:#FFF;
+  display:inline-block;
+  font-family:'Cabin', Arial, Helvetica, sans-serif;
+  padding-left:13px;
+  text-decoration:none;
+}
+
+#header nav .main a span{
+  background:url(../images/buttons/btn.png) no-repeat 100% 0;
+  display:inline-block;
+  padding:9px 16px 8px 3px;
+}
+
+#header nav .main a:hover{background-position:0 -31px;}
+#header nav .main a:hover span{background-position:100% -31px;}
+#header nav .main a:active{background-position:0 -62px;}
+#header nav .main a:active span{background-position:100% -62px;}
+
+.ie7 #header nav .main a,
+.ie7 #header nav .main a span{display:inline;}
+
+#header nav .contact-info li{
+  border-left:1px solid #848686;
+  color:#999;
+  float:left;
+  font-size:12px;
+  margin-left:10px;
+  padding-left:10px;
+}
+
+#header nav .contact-info li:first-child{border:0 none;}
+#header nav .contact-info strong{color:#FFF;}
+
+/* Content
+============================================================ */
+#content{
+  padding-bottom:280px;
+}
+
+#content > header{
+  background:#434B4B url(../images/backgrounds/heading.jpg) repeat-x top;
+  color:#B8CCCC;
+  font-family:'Cabin', Arial, Helvetica, sans-serif;
+  font-size:40px;
+  line-height:1.2em;
+  padding:15px 0 55px;
+  text-align:center;
+  text-shadow:0 2px 1px rgba(0,0,0,0.3);
+}
+
+#content > header .heading{font-weight:normal;}
+
+#content > header .heading strong{
+  color:#FFF;
+  font-family:'Cabin', Arial, Helvetica, sans-serif;
+  font-weight:600;
+}
+
+#content > header .heading span{
+  display:block;
+  font-size:30px;
+}
+
+#content > .main{background:#FFF;}
+
+.home #content > .main{height:311px;}
+
+#content > .main .wrapper{
+  color:#999;
+  font-size:16px;
+  padding:40px 0 30px;
+  position:relative;
+}
+
+.shadow{
+  background:url(../images/backgrounds/shadow.png) repeat-x top;
+  padding-top:35px;
+}
+
+h2{
+  color:#3F4A4A;
+  font-family:'Cabin', Arial, Helvetica, sans-serif;
+  font-size:25px;
+  font-weight:600;
+  line-height:1.3em;
+  margin-bottom:25px;
+}
+
+h3{
+  font-size:16px;
+  margin-bottom:15px;
+}
+
+.home p{
+  font-size:12px;
+  line-height:1.6em;
+  margin-bottom:10px;
+}
+
+small{
+  font-family:Georgia, serif;
+  font-size:10px;
+  font-style:italic;
+  line-height:1.2em;
+}
+
+.separator{
+  background:url(../images/separator.png) repeat-x;
+  clear:both;
+  height:5px;
+  margin-bottom:30px;
+}
+
+.image-block .image img{width:100%;}
+
+.image-block .content p{
+  font-family:Georgia, serif;
+  font-size:18px;
+  font-style:italic;
+  line-height:1.6em;
+  margin-bottom:20px;
+}
+
+.supported{padding-left:10px;}
+
+.supported li{
+  display:inline-block;
+  margin-right:30px;
+  vertical-align:middle;
+}
+
+.supported li img{display:inline-block;}
+
+/* Sliders
+============================================================ */
+.slider{
+  float:left;
+  margin-right:300px;
+  max-width:590px;
+}
+
+.slider .title,
+p.subheading{
+  color:#444C4C;
+  font-family:'Cabin', Arial, Helvetica, sans-serif;
+  font-size:23px;
+  line-height:1.3em;
+  margin-bottom:15px;
+}
+
+#content .slider p{
+  font-size:16px;
+  line-height:1.6em;
+  margin-bottom:15px;
+}
+
+a.video{
+  background:url(../images/icons/play-video.png) no-repeat right;
+  font-family:Georgia, serif;
+  font-size:16px;
+  font-style:italic;
+  padding-right:22px;
+}
+
+.iphone{
+  background:url(../images/iphone.png) no-repeat;
+  height:539px;
+  position:absolute;
+  right:0;
+  top:-77px;
+  width:323px;
+}
+
+.iphone li{
+  height:328px;
+  left:52px;
+  position:absolute;
+  top:126px;
+  width:219px;
+}
+
+/* Columns
+============================================================ */
+.column{
+  float:left;
+  margin-right:5%;
+}
+
+.column.last{margin-right:0 !important;}
+.column.third{width:30%;}
+.column.third.double{width:65%;}
+.column.fourth{width:21%;}
+
+/* Footer
+============================================================ */
+#footer{
+  background:url(../images/backgrounds/footer-shadow.png) no-repeat top, #333 url(../images/backgrounds/footer.gif) repeat;
+  color:#999;
+  height:220px;
+  padding-top:35px;
+}
+
+#footer .wrapper{margin-bottom:64px;}
+
+#footer .title{
+  color:#FFF;
+  font-family:'Cabin', Arial, Helvetica, sans-serif;
+  font-size:18px;
+  margin-bottom:20px;
+}
+
+#footer p{font-size:14px;}
+#footer strong{color:#FFF;}
+
+.social-media li{
+  display:inline;
+  margin-right:8px;
+}
+
+.social-media img{
+  -moz-transition:opacity 0.1s linear;
+  -webkit-transition:opacity 0.1s linear;
+  transition:opacity 0.1s linear;
+}
+
+.social-media:hover img{opacity:0.5;}
+.social-media:hover a:hover img{opacity:1;}
+
+.copyright{
+  border-top:1px solid #272727;
+  -moz-box-shadow:0 1px #3E3E3E inset;
+  -webkit-box-shadow:0 1px #3E3E3E inset;
+  box-shadow:0 1px #3E3E3E inset;
+  clear:both;
+  font-size:11px;
+  line-height:53px;
+  text-align:center;
+  text-shadow:0 1px #000;
+}
+
+
+/* Forms
+============================================================ */
+
+
+
+
+
+/* Buttons
+============================================================ */
+a.btn-green,
+input.btn-green{
+  background:url(../images/buttons/btn-green.png) no-repeat 0 0;
+  color:#FFF;
+  cursor:pointer;
+  font-size:18px;
+  display:inline-block;
+  padding:16px 0 22px;
+  text-align:center;
+  text-shadow:0 -1px rgba(0,0,0,0.2);
+  width:201px;
+}
+
+.btn-green:hover{background-position:0 -56px;}
+.btn-green:active{background-position:0 -112px;}
