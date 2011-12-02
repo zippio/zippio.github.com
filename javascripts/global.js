@@ -4,7 +4,7 @@ $(function(){
     var dataString = $('#contact-form').serialize();
     $.ajax({
       type: "POST",
-      url: 'http://zippiosite.appspot.com/contact',
+      url: 'http://app.zippio.com/contact',
       data: dataString,
       success: function(data) {
         $('.notice').show();
