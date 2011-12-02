@@ -32,9 +32,12 @@ $(function(){
     synchronise: '.iphone ul',
     pagination: {
       container: '.pagination'
-    }
+    },
+    auto: 6000
   });
-  $('.iphone ul').carouFredSel();
+  $('.iphone ul').carouFredSel({
+    auto: 6000
+  });
   
   
   
