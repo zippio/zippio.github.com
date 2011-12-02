@@ -33,10 +33,10 @@ $(function(){
     pagination: {
       container: '.pagination'
     },
-    auto: 6000
+    auto: 9000
   });
   $('.iphone ul').carouFredSel({
-    auto: 6000
+    auto: 9000
   });
   
   
