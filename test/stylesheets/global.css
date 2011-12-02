@@ -251,6 +251,13 @@ h3.phone{
   margin-bottom:25px;
 }
 
+p.notice{
+  color:#79A440;
+  display:none;
+  font-weight:bold;
+  margin-bottom:30px;
+}
+
 /* Sliders
 ============================================================ */
 .slider{
