@@ -88,6 +88,7 @@ a:hover{color:#52702D;}
 
 #header nav{float:right;}
 
+
 #header nav .main{
   float:right;
   position:relative;
@@ -125,6 +126,9 @@ a:hover{color:#52702D;}
   margin-left:10px;
   padding-left:10px;
 }
+
+#header nav .contact-info{float:right;}
+#header nav .main{clear:right;float:right;}
 
 #header nav .contact-info li:first-child{border:0 none;}
 #header nav .contact-info strong{color:#FFF;}
@@ -226,6 +230,8 @@ small{
   margin-right:30px;
   vertical-align:middle;
 }
+
+.ie7 .supported li{display:inline;}
 
 .supported li img{display:inline-block;}
 
@@ -333,6 +339,7 @@ a.video{
 
 .column.last{margin-right:0 !important;}
 .column.third{width:30%;}
+.ie7 .column.third{width:29%;}
 .column.third.double{width:65%;}
 .column.fourth{width:21%;}
 
@@ -343,6 +350,11 @@ a.video{
   color:#999;
   height:220px;
   padding-top:35px;
+}
+
+.ie7 #footer,
+.ie8 #footer{
+	background:#333 url(../images/backgrounds/footer.gif) repeat;
 }
 
 #footer .wrapper{margin-bottom:64px;}
@@ -436,3 +448,4 @@ input.btn-green{
 .btn-green:active{background-position:0 -112px;}
 
 input.btn-green{padding-bottom:19px;}
+.ie7 input.btn-green{padding-bottom:13px;padding-top:12px;}
